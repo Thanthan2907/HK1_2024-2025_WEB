@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phu Cuong medical sutures</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ffffff;
+  width: 100%;
+  height: 200px;
+  color:#05696b;
+  padding: 1em;
+  text-align:left;
+}
+header h1{
+ position:absolute;
+ top:45px;
+ left: 180px;
+ font-size: 35px;
+ color:#05696b;
+}
+ header h3{
+  position:absolute;
+  top:95px;
+  left: 181px;
+  font-size: 19px;
+  color:#05696b;
+ }
+ nav i{
+  top:-38px;
+  color:#05696b;
+  margin-left: 50px;
+  font-size: 18px;
+  position: relative;
+  left: 1030px;
+ }
+
+ nav ul {
+  text-align: center;
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-left: 100px;
+
+}
+
+nav a {
+  color: #05696b;
+  text-decoration: none;
+  font-size: 14px;
+  
+}
+
+#about, #products, #contact {
+  padding: 2em;
+
+}
+
+#products ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+#products li {
+  margin: 20px;
+  width: 200px;
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between; 
+  height: 350px; /* Set a fixed height for uniformity */
+}
+
+#products img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+
+}
+
+#products a {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #05696b;
+
+}
+#products p{
+ font-size: 12px;
+ color: #05696b;
+ margin: 5px 0;
+}
+
+#products button {
+  width: 135px;
+  background-color: #05696b;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+.row{
+  color:#045d5f;
+}
+.row h4{
+    color:#045d5f;
+}
+.row button{
+    color: #ffffff;
+    background-color:#05696b
+}
+
+footer {
+  background-color:#05696b;
+  font-size: 15px;
+  color: #ffffff;
+  padding: 2em;
+  text-align: center;
+  clear: both;
+  bottom: 0;
+  width: 100%; 
+}
+.form{
+  width:160px;
+  top:-42px;
+  color:#05696b;
+  margin-left: -150px;
+  font-size: 15px;
+  position: relative;
+  left: 1070px;
+  color:#045d5f;
+
+}
+</style>
+<script>
+  $(document).ready(function() {
+      $("#btnOpen").click(function(e) {
+          $("#authModal").modal();
+      });
+  });
+</script>
+</head>
+
+<body>
+  <header>
+    <img src="../img/logo.png" alt="logo" width="160px" height="160px">
+    <h1>Phu Cuong medical sutures</h1>
+    <h3>Tinh Hoa Phẫu Thuật - Tạo Nên Sự Hoàn Hảo</h3>
+    <nav>
+        <ul>
+          <li><a href="trangchu.html">TRANG CHỦ</a></li>
+          <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+          <li><a href="sanpham.html">SẢN PHẨM</a></li>
+          <li><a href="tintuc.html">TIN TỨC</a></li>
+          <li><a href="lienhe.html">LIÊN HỆ</a></li>
+        </ul>
+        <ul>
+          <input type="text" class="form"  style="color:#045d5f;" placeholder="Tìm kiếm..." required>
+          <i href="#" class="fas fa-search"></i>
+          <i class="fas fa-shopping-cart"></i>
+          <i href="#" class="fas fa-user" id="btnOpen"></i>
+        </ul>
+    </nav>
+  </header>
+  <!-- Product Section -->
+  <section id="products">
+    <ul>
+      <li>
+        <img src="../img/Vat-lieu-cam-mau-CPT-sutures.jpg" alt="Product 1">
+        <a href="vlcm.html">VẬT LIỆU CẦM MÁU CARECEL®</a>
+        <p>Vật liệu được làm từ Cellulose tái tạo oxi hóa, dạng lưới mỏng, được thiết kế đảm bảo độ tinh khiết và nhất quán.</p>
+        <p>Price: $10.00</p>
+        <button href="#">Add to Cart</button>
+      </li>
+      <li>
+        <img src="../img/Luoi-dao-mo-CPT-1.jpg" alt="Product 2">
+        <a href="ldm.html">LƯỠI DAO MỔ</a>
+        <p>Có lưỡi cắt hình chiếc lá được mài dọc theo cạnh đầu, được sử dụng để tạo các vết rạch dài như rạch giữa bụng trong quá trình chữa loét dạ dày. </p>
+        <p>Price: $50.00</p>
+        <button href="#">Add to Cart</button>
+      </li>
+      <li>
+        <img src="../img/medical-2.png" alt="Product 3">
+        <a href="kpt.html">KIM PHẪU THUẬT XTRACOAT®</a>
+        <p>Kim khâu y tế được làm từ hợp kim thép Series 300 chắc khỏe, có khả năng đàn hồi chống cong gãy giúp phẫu thuật viên thao tác dễ dàng.</p>
+        <p>Price: $5.00</p>
+        <button href="#">Add to Cart</button>
+      </li>
+      <li>
+        <img src="../img/medical-3.png" alt="Product 4">
+        <a href="ltv.html">LƯỚI THOÁT VỊ TRUSTILENE® MESH</a>
+        <p>Lưới thoát vị TRUSTILENE® hay còn gọi là miếng điều trị thoát vị TRUSTILENE® </p>
+        <p>Price: $5.00</p>
+        <button href="#">Add to Cart</button>
+      </li>
+      <li>
+        <img src="../img/pd-4.png" alt="Product 1">
+        <a>CARESORB® POLYGLACTIN 910 (chỉ Vicryl)</a>
+        <p>Chỉ phẫu thuật CARESORB® giữ vết khâu tốt nhất trong vòng 30 ngày. Thời gian tan từ 56 - 70 ngày.</p>
+        <p>Price: $10.00</p>
+        <button href="#">Add to Cart</button>
+      </li>
+      <li>
+        <img src="../img/PROTIBOND-POLYESTER-BOX-CPT-SUTURES-768x490.jpg" alt="Product 2">
+        <a>PROTIBOND® POLYESTER</a>
+        <p>Chỉ phẫu thuật PROTIBOND® được sử dụng để khâu, nối các mô mềm bao gồm trong phẫu thuật tim mạch, mắt, ngoại thần kinh, làm chỉ buộc…</p>
+        <p>Price: $50.00</p>
+        <button href="#" >Add to Cart</button>
+      </li>
+
+      <!-- Add more products here -->
+    </ul>
+  </section>
+  <div class="row">
+    <div class="modal fade" id="authModal" tabindex="-1" role="dialog" aria-labelledby="authModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul class="nav nav-tabs" id="authTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">Đăng Nhập</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="register-tab" data-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">Đăng Ký</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="authTabContent">
+              <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                <form class="mt-3">
+                  <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" class="form-control" id="loginEmail" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="loginPassword">Mật Khẩu</label>
+                    <input type="password" class="form-control" id="loginPassword" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Đăng Nhập</button>
+                </form>
+              </div>
+              <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                <form class="mt-3">
+                  <div class="form-group">
+                    <label for="registerName">Tên</label>
+                    <input type="text" class="form-control" id="registerName" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" class="form-control" id="registerEmail" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="registerPassword">Mật Khẩu</label>
+                    <input type="password" class="form-control" id="registerPassword" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="confirmPassword">Xác Nhận Mật Khẩu</label>
+                    <input type="password" class="form-control" id="confirmPassword" required>
+                  </div>
+                  <button type="submit" class="btn btn-success">Đăng Ký</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Phu Cuong medical sutures</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

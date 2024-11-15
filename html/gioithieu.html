@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content ="width=device-width, initial-scale=1.0">
+  <title>Phu Cuong medical sutures</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+</head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+header {
+  background-color: #ffffff;
+  width: 100%;
+  height: 200px;
+  color:#05696b;
+  padding: 1em;
+  text-align:left;
+}
+header h1{
+ position:absolute;
+ top:45px;
+ left: 180px;
+ font-size: 35px;
+ color:#05696b;
+}
+ header h3{
+  position:absolute;
+  top:95px;
+  left: 181px;
+  font-size: 19px;
+  color:#05696b;
+ }
+ nav i{
+  top:-38px;
+  color:#05696b;
+  margin-left: 50px;
+  font-size: 18px;
+  position: relative;
+  left: 1030px;
+ }
+
+ nav ul {
+  text-align: center;
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-left: 100px;
+
+}
+
+nav a {
+  color: #05696b;
+  text-decoration: none;
+  font-size: 14px;
+  
+}
+
+#hero {
+  background: url('../img/') no-repeat center center/cover;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2e8772;
+}
+
+#hero h1 {
+  font-size: 48px;
+}
+.container {
+  width: 100%;
+  max-width: 1450px;
+  color:#045d5f;
+}
+h1 {
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  color:#045d5f
+  
+}
+hr {
+  border: 0;
+  border-top: 1px solid #045d5f;
+  margin-bottom: 20px;
+}
+.content {
+  padding-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.content div {
+  width: 48%;
+}
+.content p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  position: relative;
+  padding-left: 20px;
+}
+.content p:before {
+  content: "\25A0";
+  color:#045d5f;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+}
+
+#about {
+  padding: 2em;
+  color:#045d5f;
+}
+
+#about h2 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+#about ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#about li {
+  margin-bottom: 10px;
+}
+
+.row{
+  color:#045d5f;
+}
+.row h4{
+  color:#045d5f;
+  font-family:font_strong;
+}
+.row button{
+  color: #ffffff;
+  background-color:#05696b;
+}
+
+footer {
+  background-color: #158370;
+  color: #fff;
+  padding: 2em;
+  text-align: center;
+  clear: both;
+  bottom: 0;
+  width: 100%; 
+}
+.form{
+  width:160px;
+  top:-42px;
+  color:#05696b;
+  margin-left: -150px;
+  font-size: 15px;
+  position: relative;
+  left: 1070px;
+  color:#045d5f;
+
+}
+</style>
+<script>
+  $(document).ready(function() {
+      $("#btnOpen").click(function(e) {
+          $("#authModal").modal();
+      });
+  });
+  </script>
+</head>
+<body>
+  <header>
+    <img src="../img/logo.png" alt="logo" width="160px" height="160px">
+    <h1>Phu Cuong medical sutures</h1>
+    <h3>Tinh Hoa Phẫu Thuật - Tạo Nên Sự Hoàn Hảo</h3>
+    <nav>
+        <ul>
+          <li><a href="trangchu.html">TRANG CHỦ</a></li>
+          <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+          <li><a href="sanpham.html">SẢN PHẨM</a></li>
+          <li><a href="tintuc.html">TIN TỨC</a></li>
+          <li><a href="lienhe.html">LIÊN HỆ</a></li>
+        </ul>
+        <ul>
+          <input type="text" class="form"  style="color:#045d5f;" placeholder="Tìm kiếm..." required>
+          <i href="#" class="fas fa-search" ></i>
+          <i class="fas fa-shopping-cart"></i>
+          <i href="#" class="fas fa-user" id="btnOpen"></i>
+        </ul>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <section id="about">
+    <div class="row mt-4">
+      <div class="col-md-6">
+          <div class="content-box">
+            <div class="content-box">
+              <img src="../img/ls.png" width="90%">
+          </div>
+          </div>
+      </div>
+      <div class="col-md-6">
+        <h1>LỊCH SỬ</h1>
+        <p>Kể từ khi thành lập vào năm 1992, CPT đã khẳng định vị thế của mình như một nhà sản xuất hàng đầu trong lĩnh vực thiết bị y tế kỹ thuật cao, đặc biệt chuyên cung cấp các sản phẩm phục vụ cho phẫu thuật ngoại khoa. Với sự tập trung vào chất lượng và đổi mới, chúng tôi đã phát triển một loạt sản phẩm chủ lực, bao gồm chỉ khâu phẫu thuật và các vật tư y tế tiêu hao dùng trong điều trị vết thương.<br>
+
+          Đội ngũ nhân sự của chúng tôi, bao gồm những chuyên gia dày dạn kinh nghiệm và đầy tâm huyết, luôn nỗ lực không ngừng để mang đến những sản phẩm tốt nhất cho khách hàng. Chúng tôi sử dụng nguyên vật liệu cao cấp và áp dụng công nghệ hiện đại của Đức trong quy trình sản xuất, đảm bảo mỗi sản phẩm đều đạt tiêu chuẩn quốc tế nghiêm ngặt, bao gồm cả chứng nhận từ US-FDA.<br>
+          
+          Với nhiều tính năng kỹ thuật vượt trội, sản phẩm của CPT không chỉ đáp ứng được kỳ vọng cao của khách hàng mà còn tuân thủ chặt chẽ các yêu cầu luật định trong ngành y tế. Chúng tôi cam kết mang đến sự an tâm và tin cậy cho các bác sĩ và bệnh nhân thông qua các sản phẩm chất lượng, góp phần nâng cao hiệu quả điều trị và cải thiện sức khỏe cộng đồng.</p>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="content-box">
+              <h1>SỨ MỆNH</h1>
+              <p>Chúng tôi cam kết đồng hành cùng cộng đồng y tế trong việc cung cấp các giải pháp và sản phẩm y tế chất lượng, an toàn và hiệu quả nhất:
+          
+                <br><li><b>Nâng cao chất lượng cuộc sống:</b> Chúng tôi tận tâm phục vụ để đảm bảo mọi người có quyền truy cập vào các sản phẩm y tế chất lượng, hỗ trợ họ duy trì và nâng cao chất lượng cuộc sống.</li>
+                <li><b>Hỗ trợ sức khỏe cộng đồng:</b> Chúng tôi cam kết hỗ trợ sức khỏe cộng đồng bằng cách cung cấp các sản phẩm y tế đa dạng và phù hợp với nhu cầu thực tế, giúp nâng cao chất lượng dịch vụ y tế cho mọi người.</li>
+                <li><b>Đồng hành với các chuyên gia y tế:</b> Chúng tôi luôn lắng nghe và học hỏi từ các chuyên gia y tế để cung cấp các sản phẩm và giải pháp tiên tiến nhất, giúp họ thực hiện công việc một cách hiệu quả và an toàn nhất.</li>
+                <li><b>Tôn trọng và đáp ứng nhu cầu của khách hàng:</b> Chúng tôi luôn đặt khách hàng lên hàng đầu, tôn trọng và đáp ứng mọi nhu cầu của họ bằng cách cung cấp sản phẩm chất lượng, dịch vụ chăm sóc khách hàng tận tâm và chuyên nghiệp.</p></li>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="content-box">
+                <img src="../img/sumenh.jpg" width="90%">
+            </div>
+        </div>
+    </div>
+  </section>
+  <div class="container">
+    <h1>NĂNG LỰC</h1>
+    <hr>
+    <div class="content">
+        <div>
+            <p>Với kinh nghiệm dày dặn, quy mô sản xuất lớn và vị trí giao thương thuận tiện; Phu Cuong medical sutures có lợi thế cung cấp đầy đủ các loại chỉ phẫu thuật và vật tư y tế tiêu hao một cách nhanh chóng với chất lượng đảm bảo và giá cả cạnh tranh nhất trên thị trường.</p>
+        </div>
+        <div>
+            <p>Đội ngũ nghiên cứu và phát triển (R&D) luôn cập nhật công nghệ mới và tiếp thu ý kiến từ các nhà chuyên môn trong ngành y tế để cải tiến liên tục chất lượng sản phẩm, thiết lập những chuẩn mực và tính năng kỹ thuật mới.</p>
+        </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- About Section -->
+  
+  <div class="row">
+    <div class="modal fade" id="authModal" tabindex="-1" role="dialog" aria-labelledby="authModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul class="nav nav-tabs" id="authTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">Đăng Nhập</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="register-tab" data-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">Đăng Ký</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="authTabContent">
+              <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                <form class="mt-3">
+                  <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" class="form-control" id="loginEmail" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="loginPassword">Mật Khẩu</label>
+                    <input type="password" class="form-control" id="loginPassword" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Đăng Nhập</button>
+                </form>
+              </div>
+              <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                <form class="mt-3">
+                  <div class="form-group">
+                    <label for="registerName">Tên</label>
+                    <input type="text" class="form-control" id="registerName" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" class="form-control" id="registerEmail" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="registerPassword">Mật Khẩu</label>
+                    <input type="password" class="form-control" id="registerPassword" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="confirmPassword">Xác Nhận Mật Khẩu</label>
+                    <input type="password" class="form-control" id="confirmPassword" required>
+                  </div>
+                  <button type="submit" class="btn btn-success">Đăng Ký</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Phu Cuong medical sutures</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
